@@ -260,7 +260,9 @@ var DayCell = /*#__PURE__*/function (_Component) {
         }
       }), this.renderSelectionPlaceholders(), this.renderPreviewPlaceholder(), /*#__PURE__*/_react.default.createElement("span", {
         className: this.props.styles.dayNumber
-      }, (dayContentRenderer === null || dayContentRenderer === void 0 ? void 0 : dayContentRenderer(this.props.day)) || /*#__PURE__*/_react.default.createElement("span", null, (0, _dateFns.format)(this.props.day, this.props.dayDisplayFormat))));
+      }, (dayContentRenderer === null || dayContentRenderer === void 0 ? void 0 : dayContentRenderer(this.props.day)) || /*#__PURE__*/_react.default.createElement("span", {
+        className: "dayNumberSpan"
+      }, (0, _dateFns.format)(this.props.day, this.props.dayDisplayFormat))));
     }
   }]);
 

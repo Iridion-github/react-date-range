@@ -170,10 +170,11 @@ class DayCell extends Component {
         style={{ color: this.props.color }}>
         {this.renderSelectionPlaceholders()}
         {this.renderPreviewPlaceholder()}
-        {/*//here*/}
         <span className={this.props.styles.dayNumber}>
           {dayContentRenderer?.(this.props.day) || (
-            <span>{format(this.props.day, this.props.dayDisplayFormat)}</span>
+            <span className="dayNumberSpan">
+              {format(this.props.day, this.props.dayDisplayFormat)}
+            </span>
           )}
         </span>
       </button>
