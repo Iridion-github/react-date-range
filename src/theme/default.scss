@@ -192,10 +192,20 @@
 }
 
 .rdrDay:not(.rdrDayPassive) {
-  .rdrInRange, .rdrStartEdge, .rdrEndEdge, .rdrSelected {
+  .rdrStartEdge, .rdrEndEdge, .rdrSelected {
     & ~ .rdrDayNumber {
       span {
         color: rgba(255, 255, 255, 0.85);
+      }
+    }
+  }
+}
+
+.rdrDay:not(.rdrDayPassive) {
+  .rdrInRange {
+    & ~ .rdrDayNumber {
+      span {
+        color: #161616;
       }
     }
   }
