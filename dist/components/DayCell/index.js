@@ -220,7 +220,7 @@ var DayCell = /*#__PURE__*/function (_Component) {
 
         return /*#__PURE__*/_react.default.createElement("span", {
           key: i,
-          className: (0, _classnames4.default)((_classnames3 = {}, _defineProperty(_classnames3, styles.startEdge, range.isStartEdge), _defineProperty(_classnames3, styles.endEdge, range.isEndEdge), _defineProperty(_classnames3, styles.inRange, range.isInRange), _classnames3)),
+          className: (0, _classnames4.default)((_classnames3 = {}, _defineProperty(_classnames3, styles.startEdge, range.isStartEdge), _defineProperty(_classnames3, styles.endEdge, range.isEndEdge), _defineProperty(_classnames3, styles.inRange, range.isInRange), _classnames3)) + (range.isStartEdge || range.isEndEdge) ? ' rangeEdgeWhiteText' : '',
           style: {
             color: range.color || _this.props.color
           }

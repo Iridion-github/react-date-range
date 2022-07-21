@@ -167,6 +167,10 @@
 
 .rdrDayActive{}
 
+.rangeEdgeWhiteText {
+  color: #E0E0E0 !important;
+}
+
 .rdrDateRangePickerWrapper{
   display: inline-flex;
   -webkit-user-select: none;

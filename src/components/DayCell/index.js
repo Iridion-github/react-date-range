@@ -140,11 +140,15 @@ class DayCell extends Component {
     return inRanges.map((range, i) => (
       <span
         key={i}
-        className={classnames({
-          [styles.startEdge]: range.isStartEdge,
-          [styles.endEdge]: range.isEndEdge,
-          [styles.inRange]: range.isInRange,
-        })}
+        className={
+          classnames({
+            [styles.startEdge]: range.isStartEdge,
+            [styles.endEdge]: range.isEndEdge,
+            [styles.inRange]: range.isInRange,
+          }) + (range.isStartEdge || range.isEndEdge)
+            ? ' rangeEdgeWhiteText'
+            : ''
+        }
         style={{ color: range.color || this.props.color }}
       />
     ));
@@ -169,11 +173,11 @@ class DayCell extends Component {
         style={{ color: this.props.color }}>
         {this.renderSelectionPlaceholders()}
         {this.renderPreviewPlaceholder()}
+        {/*//here*/}
         <span className={this.props.styles.dayNumber}>
-          {
-            dayContentRenderer?.(this.props.day) ||
+          {dayContentRenderer?.(this.props.day) || (
             <span>{format(this.props.day, this.props.dayDisplayFormat)}</span>
-          }
+          )}
         </span>
       </button>
     );
