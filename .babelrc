@@ -8,22 +8,6 @@
       "presets": [
         "react-app"
       ]
-    },
-    "development": {
-      "presets": [
-        [
-          "@babel/preset-react",
-          {
-            "development": true
-          }
-        ],
-        [
-          "@babel/preset-env",
-          {
-            "development": true
-          }
-        ]
-      ]
     }
   }
 }
