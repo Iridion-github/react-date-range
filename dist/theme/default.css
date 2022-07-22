@@ -180,8 +180,12 @@
     background: #3d91ff;
   }
 
-.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span:after, .rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span:after, .rdrDayToday:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span:after, .rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span:after {
-      background: #fff;
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber .light span:after, .rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber .light span:after, .rdrDayToday:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber .light span:after, .rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber .light span:after {
+      background: #161616;
+    }
+
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber .dark span:after, .rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber .dark span:after, .rdrDayToday:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber .dark span:after, .rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber .dark span:after {
+      background: #F4F4F4;
     }
 
 .rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span {
@@ -348,14 +352,10 @@
   }
 
 .rdrCalendarWrapper:not(.rdrDateRangeWrapper) .rdrDayHovered .rdrDayNumber:after {
-  content: '';
-  border: 1px solid currentColor;
-  border-radius: 1.333em;
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: 0px;
-  right: 0px;
+  height: 4px;
+  width: 4px;
+  bottom: 8px;
+  border-radius: 0;
   background: transparent;
 }
 
