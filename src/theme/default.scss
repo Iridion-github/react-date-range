@@ -44,7 +44,7 @@
   padding-top: 10px;
 }
 
-.rdrMonthAndYearPickers {
+.rdrMonthAndYearPickers:not(.dark):not(.light) {
   font-weight: 600;
 
   select {
@@ -383,7 +383,7 @@
   }
 }
 
-.rdrCalendarWrapper:not(.rdrDateRangeWrapper) .rdrDayHovered .rdrDayNumber:after {
+.rdrCalendarWrapper:not(.rdrDateRangeWrapper):not(.dark):not(.light) .rdrDayHovered .rdrDayNumber:after {
   height: 4px;
   width: 4px;
   bottom: 8px;

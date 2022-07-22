@@ -42,11 +42,11 @@
   padding-top: 10px;
 }
 
-.rdrMonthAndYearPickers {
+.rdrMonthAndYearPickers:not(.dark):not(.light) {
   font-weight: 600;
 }
 
-.rdrMonthAndYearPickers select {
+.rdrMonthAndYearPickers:not(.dark):not(.light) select {
     -moz-appearance: none;
          appearance: none;
     -webkit-appearance: none;
@@ -62,7 +62,7 @@
     text-align: center
   }
 
-.rdrMonthAndYearPickers select:hover {
+.rdrMonthAndYearPickers:not(.dark):not(.light) select:hover {
       background-color: rgba(0, 0, 0, 0.07);
     }
 
@@ -348,7 +348,7 @@
     color: #333;
   }
 
-.rdrCalendarWrapper:not(.rdrDateRangeWrapper) .rdrDayHovered .rdrDayNumber:after {
+.rdrCalendarWrapper:not(.rdrDateRangeWrapper):not(.dark):not(.light) .rdrDayHovered .rdrDayNumber:after {
   height: 4px;
   width: 4px;
   bottom: 8px;
