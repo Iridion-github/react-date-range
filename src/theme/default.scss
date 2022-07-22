@@ -173,13 +173,10 @@
   &:after {
     content: '';
     position: absolute;
-    bottom: 4px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 18px;
-    height: 2px;
-    border-radius: 2px;
-    background: #3d91ff;
+    height: 4px;
+    width: 4px;
+    bottom: 8px;
+    border-radius: 0;
   }
 }
 
